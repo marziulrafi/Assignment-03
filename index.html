@@ -96,7 +96,7 @@
         </div>
     </header>
 
-    <main class="container mx-auto">
+    <main class="container mx-auto -mt-24">
         <section class="lg:p-16">
             <h1 class="adlam text-4xl mb-6">Browse By Categories</h1>
             <div class="grid sm:grid-cols-6 grid-cols-2 gap-5">
@@ -182,7 +182,7 @@
         </section>
 
 
-        <section class="lg:p-20 container mx-auto bg-[#FFF9F4]">
+        <section class="lg:p-20 container mx-auto bg-[#FFF9F4] mt-16">
             <h1 class="adlam text-4xl mb-11 mt-9 animate-pulse">Trending Pet Products</h1>
 
             <div class="flex lg:flex-row flex-col gap-6">
@@ -339,64 +339,37 @@
                 </div>
         </section>
 
-        <section class="container mx-auto lg:p-20 mb-96">
+        <section class="container mx-auto lg:p-20 mb-96 mt-14">
             <h1 class="adlam text-4xl mb-14">Everyday low Price</h1>
             <div class="flex lg:flex-row flex-col gap-6">
                 <div class="lg:w-3/5 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] flex lg:justify-around lg:flex-row flex-col rounded-xl lg:items-center">
 
                     <div class="pt-16 pl-9 lg:py-32 lg:pl-16 flex flex-col gap-3">
-                        <p class="text-xl">Under Price</p>
+                        <p class="text-xl hidden lg:block">Under Price</p>
                         <h1 class="adlam text-2xl">Pet Grooming Mitt</h1>
-                        <p class="adlam text-2xl text-white">(Easy Hair Removal)</p>
-                        <p class="adlam text-5xl">$7.99</p>
+                        <p class="adlam text-2xl text-white hidden lg:block">(Easy Hair Removal)</p>
+                        <p class="adlam text-5xl text-white lg:text-black">$7.99</p>
                     </div>
 
-                    <img class="mt-5" src="c1-assets/cute-dog-mid.png" alt="">
+                    <img class="lg:w-3/5 w-1/2 ml-40 lg:ml-0" src="c1-assets/cute-dog-mid.png" alt="">
                 </div>
 
-                <div class="flex w-[490px] h-[430px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-xl">
-                    <div class="p-10 flex flex-col gap-2 mt-6">
-                        <p class="adlam text-[22px]">T-Shirt for Dogs</p>
+                <div class="flex justify-around bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-xl">
+                    <div class="pt-16 pl-9 flex flex-col gap-2">
+                        <p class="adlam text-2xl">T-Shirt for Dogs</p>
                         <h1 class="adlam text-[#FFDC26] text-5xl">$7.99</h1>
                     </div>
-                    <img class="-ml-16" src="c1-assets/cute-pet-small.png" alt="">
+                    <img class="mr-28" src="c1-assets/cute-pet-small.png" alt="">
                 </div>
             </div>
         </section>
 
-        <section>
-            <h1 class="adlam text-3xl mb-12 text-center animate-bounce">Frequently Asked Questions</h1>
-            <div class="join join-vertical w-[1000px] ml-72">
-                <div class="collapse collapse-arrow join-item border-base-300 border">
-                    <input type="radio" name="my-accordion-4" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">Subscription Available?</div>
-                    <div class="collapse-content">
-                        <p>Yes</p>
-                    </div>
+        <section class="container mx-auto -mt-80 px-5 lg:p-20 absolute z-10">
+            <div class="lg:p-8 p-3 gap-5 lg:gap-10 rounded-2xl bg-[#FFF9F4] flex flex-col lg:flex-row lg:justify-around lg:items-center">
+                <div>
+                    <img class="pt-12" src="c1-assets/cute-pet-mid.png" alt="">
                 </div>
-                <div class="collapse collapse-arrow join-item border-base-300 border">
-                    <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">Can I return my order?</div>
-                    <div class="collapse-content">
-                        <p>Yes, within 12 hours.</p>
-                    </div>
-                </div>
-                <div class="collapse collapse-arrow join-item border-base-300 border">
-                    <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">How long will it take for my package to arrive?
-                    </div>
-                    <div class="collapse-content">
-                        <p>24-72 hours.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="p-20 ml-14 relative">
-            <div class="p-8 gap-28 rounded-2xl w-[1280px] h-[460px] bg-[#FFF9F4] flex">
-                <img class="ml-10" src="c1-assets/cute-pet-mid.png" alt="">
-                <div class="flex flex-col gap-4 ml-10">
+                <div class="flex flex-col gap-4">
                     <h1 class="mt-10 adlam text-3xl">Get Pawsome News!</h1>
                     <p>Exclusive training tips, ticks, product deals and more.</p>
                     <input type="text" placeholder="Enter Email ..."
@@ -406,8 +379,8 @@
         </section>
     </main>
 
-    <footer class=" w-full bg-[#FFDC2680] p-48 -mt-52">
-        <div class="flex justify-between">
+    <footer class="w-full bg-[#FFDC2680] lg:p-48 lg:-mt-52 relative">
+        <div class="flex flex-col lg:flex-row pl-5 lg:justify-between pt-96 lg:pt-64 lg:items-center">
             <div class="flex flex-col gap-5">
                 <div class="flex gap-3">
                     <img src="c1-assets/logo-footer.png" alt="">
@@ -426,7 +399,7 @@
 
             <div class="flex flex-col gap-3 mt-24">
                 <h1 class="font-medium">Follow Us</h1>
-                <img class="cursor-pointer" src="c1-assets/social.png" alt="">
+                <img class="cursor-pointer w-[184.92px] pb-6" src="c1-assets/social.png" alt="">
             </div>
         </div>
     </footer>
