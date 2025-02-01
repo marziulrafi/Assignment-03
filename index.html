@@ -26,25 +26,11 @@
 <body>
     <header>
         <nav class="container mx-auto">
-            <div class="navbar bg-[#FFF9F4]">
+            <div class="navbar flex justify-between bg-[#FFF9F4]">
                 <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-44 p-2 shadow">
-                            <li><a>Find a Pet</a></li>
-                            <li><a>Breeds</a></li>
-                            <li><a>Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <img class="ml-14" src="c1-assets/logo-header.png" alt="">
-                    <a class="btn btn-ghost text-xl">Browser<span class="text-[#FFDC26]">4</span>Pets</a>
+
+                    <img class="lg:ml-14" src="c1-assets/logo-header.png" alt="">
+                    <a class="btn btn-ghost hidden lg:flex items-center text-xl"><div>Browser<span class="text-[#FFDC26]">4</span>Pets</div></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -69,38 +55,54 @@
                         </svg>
                     </div>
                 </button>
-                <div class="gap-3">
+                <div class="gap-3 hidden lg:flex">
                     <div>
                         <a class="border-[#FFDC26] hidden lg:flex px-7 py-2.5 btn bg-[#FFF9F4]">Login</a>
                     </div>
                     <div>
-                        <a class="px-7 py-2.5 btn btn-warning hidden lg:flex">Register</a>
+                        <a class="px-7 py-2.5 btn btn-warning lg:flex">Register</a>
                     </div>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-44 p-2 shadow">
+                        <li><a>Find a Pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
 
-        <div class="banner p-20">
-            <div class="p-14">
+        <div class="banner p-4 lg:p-20 mb-40">
+            <div class="absolute lg:p-14 z-10">
                 <h1 class="adlam text-6xl mb-3">Pamper Your Pet,<br>Because They Deserve<br>the Best</h1>
                 <p class="mb-3">Discover a world of treats, toys, and essentials handpicked for<br>your furry friends.
                     Shop now and make tails wag with joy!</p>
-                <button class="btn btn-warning">Find a Pet</button>
+                <button class="btn btn-warning px-10">Find a Pet</button>
             </div>
 
-            <div class="-mt-96 h-screen bg-cover bg-center" style="background-image: url('c1-assets/cat-big.png');">
+            <div class="relative mt-96 lg:-mt-5">
+                <img src="c1-assets/cat-big.png" alt="">
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="p-16 ml-12">
-            <h1 class="adlam text-4xl mb-6 ml-12">Browse By Categories</h1>
-            <div class="grid sm:grid-cols-6 grid-cols-2 ml-10">
+    <main class="container mx-auto">
+        <section class="lg:p-16">
+            <h1 class="adlam text-4xl mb-6">Browse By Categories</h1>
+            <div class="grid sm:grid-cols-6 grid-cols-2 gap-5">
                 <div>
-                    <div class="w-44 h-52 bg-[#F9DF8A] rounded-xl content-center">
-                        <div class="ml-9">
+                    <div class="lg:w-44 h-52 bg-[#F9DF8A] rounded-xl flex flex-col justify-center items-center text-center">
+                        <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104"
                                 fill="none">
                                 <circle cx="52" cy="52" r="52" fill="white" />
@@ -112,8 +114,8 @@
                     </div>
                 </div>
                 <div>
-                    <div class="w-44 h-52 bg-[#F9DF8A] rounded-xl content-center">
-                        <div class="ml-9">
+                    <div class="lg:w-44 h-52 bg-[#F9DF8A] rounded-xl flex flex-col justify-center items-center text-center">
+                        <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104"
                                 fill="none">
                                 <circle cx="52" cy="52" r="52" fill="white" />
@@ -125,8 +127,8 @@
                     </div>
                 </div>
                 <div>
-                    <div class="w-44 h-52 bg-[#F9DF8A] rounded-xl content-center">
-                        <div class="ml-9">
+                    <div class="lg:w-44 h-52 bg-[#F9DF8A] rounded-xl flex flex-col justify-center items-center text-center">
+                        <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104"
                                 fill="none">
                                 <circle cx="52" cy="52" r="52" fill="white" />
@@ -138,8 +140,8 @@
                     </div>
                 </div>
                 <div>
-                    <div class="w-44 h-52 bg-[#F9DF8A] rounded-xl content-center">
-                        <div class="ml-9">
+                    <div class="lg:w-44 h-52 bg-[#F9DF8A] rounded-xl flex flex-col justify-center items-center text-center">
+                        <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104"
                                 fill="none">
                                 <circle cx="52" cy="52" r="52" fill="white" />
@@ -151,8 +153,8 @@
                     </div>
                 </div>
                 <div>
-                    <div class="w-44 h-52 bg-[#F9DF8A] rounded-xl content-center">
-                        <div class="ml-9">
+                    <div class="lg:w-44 h-52 bg-[#F9DF8A] rounded-xl flex flex-col justify-center items-center text-center">
+                        <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104"
                                 fill="none">
                                 <circle cx="52" cy="52" r="52" fill="white" />
@@ -164,8 +166,8 @@
                     </div>
                 </div>
                 <div>
-                    <div class="w-44 h-52 bg-[#F9DF8A] rounded-xl content-center">
-                        <div class="ml-9">
+                    <div class="lg:w-44 h-52 bg-[#F9DF8A] rounded-xl flex flex-col justify-center items-center text-center">
+                        <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="104" height="104" viewBox="0 0 104 104"
                                 fill="none">
                                 <circle cx="52" cy="52" r="52" fill="white" />
@@ -180,10 +182,10 @@
         </section>
 
 
-        <section class="p-20 w-full bg-[#FFF9F4]">
-            <h1 class="adlam text-4xl mb-11 ml-24">Trending Pet Products</h1>
+        <section class="lg:p-20 container mx-auto bg-[#FFF9F4]">
+            <h1 class="adlam text-4xl mb-11 mt-9 animate-pulse">Trending Pet Products</h1>
 
-            <div class="flex gap-6 ml-24">
+            <div class="flex lg:flex-row flex-col gap-6">
                 <div class="p-6 w-[430px] h-[415px] bg-[#F9DF8A] rounded-xl">
                     <div>
                         <h1 class="mt-5 adlam text-3xl">T-Shirt for Dogs</h1>
@@ -316,7 +318,7 @@
                                 <p class="font-medium">$39.99</p>
                             </div>
                         </div>
-                        <div class="w-[220px] h-[120px] bg-white rounded-xl flex gap-5 p-6">
+                        <div class="hidden w-[220px] h-[120px] bg-white rounded-xl lg:flex gap-5 p-6">
                             <div class="bg-[#FFF9F4] w-[60px] h-[60px] rounded-lg">
                                 <img class="w-[40px] h-[40px] ml-[10px] mt-[10px]" src="c1-assets/rabbit-cartoon.png"
                                     alt="">
@@ -337,12 +339,12 @@
                 </div>
         </section>
 
-        <section class="p-20 ml-16">
+        <section class="container mx-auto lg:p-20 mb-96">
             <h1 class="adlam text-4xl mb-14">Everyday low Price</h1>
-            <div class="flex gap-7">
-                <div class="w-[750px] h-[430px] bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] flex rounded-xl">
+            <div class="flex lg:flex-row flex-col gap-6">
+                <div class="lg:w-3/5 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] flex lg:justify-around lg:flex-row flex-col rounded-xl lg:items-center">
 
-                    <div class="p-20 flex flex-col gap-3">
+                    <div class="pt-16 pl-9 lg:py-32 lg:pl-16 flex flex-col gap-3">
                         <p class="text-xl">Under Price</p>
                         <h1 class="adlam text-2xl">Pet Grooming Mitt</h1>
                         <p class="adlam text-2xl text-white">(Easy Hair Removal)</p>
@@ -355,12 +357,41 @@
                 <div class="flex w-[490px] h-[430px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-xl">
                     <div class="p-10 flex flex-col gap-2 mt-6">
                         <p class="adlam text-[22px]">T-Shirt for Dogs</p>
-                    <h1 class="adlam text-[#FFDC26] text-5xl">$7.99</h1>
+                        <h1 class="adlam text-[#FFDC26] text-5xl">$7.99</h1>
                     </div>
                     <img class="-ml-16" src="c1-assets/cute-pet-small.png" alt="">
                 </div>
             </div>
         </section>
+
+        <section>
+            <h1 class="adlam text-3xl mb-12 text-center animate-bounce">Frequently Asked Questions</h1>
+            <div class="join join-vertical w-[1000px] ml-72">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">Subscription Available?</div>
+                    <div class="collapse-content">
+                        <p>Yes</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">Can I return my order?</div>
+                    <div class="collapse-content">
+                        <p>Yes, within 12 hours.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                    <input type="radio" name="my-accordion-4" />
+                    <div class="collapse-title text-xl font-medium">How long will it take for my package to arrive?
+                    </div>
+                    <div class="collapse-content">
+                        <p>24-72 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section class="p-20 ml-14 relative">
             <div class="p-8 gap-28 rounded-2xl w-[1280px] h-[460px] bg-[#FFF9F4] flex">
@@ -368,21 +399,22 @@
                 <div class="flex flex-col gap-4 ml-10">
                     <h1 class="mt-10 adlam text-3xl">Get Pawsome News!</h1>
                     <p>Exclusive training tips, ticks, product deals and more.</p>
-                    <input type="text" placeholder="Enter Email ..." class="input input-bordered w-full max-w-xs text-[#C4C4C4]" />
+                    <input type="text" placeholder="Enter Email ..."
+                        class="input input-bordered w-full max-w-xs text-[#C4C4C4]" />
                     <button class="btn btn-warning w-[140px] text-[16px] font-normal">Subscribe</button>
                 </div>
-            </div>
         </section>
     </main>
 
     <footer class=" w-full bg-[#FFDC2680] p-48 -mt-52">
         <div class="flex justify-between">
             <div class="flex flex-col gap-5">
-               <div class="flex gap-3">
-                <img src="c1-assets/logo-footer.png" alt="">
-                <h1 class="mt-3 text-[26px]">Browse4Pets</h1>
-               </div>
-               <p class="text-xl">Discover a world of treats,<br>toys, and essentials handpicked<br>for your furry friends</p>
+                <div class="flex gap-3">
+                    <img src="c1-assets/logo-footer.png" alt="">
+                    <h1 class="mt-3 text-[26px]">Browse4Pets</h1>
+                </div>
+                <p class="text-xl">Discover a world of treats,<br>toys, and essentials handpicked<br>for your furry
+                    friends</p>
             </div>
 
             <div class="flex flex-col mt-9 gap-3">
