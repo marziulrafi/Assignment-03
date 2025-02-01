@@ -74,12 +74,7 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-44 p-2 shadow">
-                        <li><a>Find a Pet</a></li>
-                        <li><a>Breeds</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
+
                 </div>
             </div>
         </nav>
@@ -90,7 +85,7 @@
                 <h1 class="adlam text-6xl mb-3">Pamper Your Pet,<br>Because They Deserve<br>the Best</h1>
                 <p class="mb-3">Discover a world of treats, toys, and essentials handpicked for<br>your furry friends.
                     Shop now and make tails wag with joy!</p>
-                <button class="btn btn-warning px-10">Find a Pet</button>
+                <button class="btn btn-warning px-10 animate-bounce">Find a Pet</button>
             </div>
 
             <div class="relative mt-96 lg:-mt-5">
@@ -192,23 +187,22 @@
 
 
         <section class="lg:p-20 container mx-auto bg-[#FFF9F4] mt-16">
-            <h1 class="adlam text-4xl mb-11 mt-9 animate-pulse">Trending Pet Products</h1>
+            <h1 class="adlam lg:text-4xl text-3xl mb-11 mt-9">Trending Pet Products</h1>
 
             <div class="flex lg:flex-row flex-col gap-6">
-                <div class="p-6 w-[430px] h-[415px] bg-[#F9DF8A] rounded-xl">
+                <div class="p-6 lg:w-[430px] lg:h-[415px] bg-[#F9DF8A] rounded-xl">
                     <div>
-                        <h1 class="mt-5 adlam text-3xl">T-Shirt for Dogs</h1>
-                        <p class="mt-5">Discover a world of treats, toys,<br>and essentials handpicked<br>for your furry
+                        <h1 class="mt-5 adlam lg:text-3xl text-2xl">T-Shirt for Dogs</h1>
+                        <p class="lg:text-base text-sm mt-5">Discover a world of treats, toys,<br>and essentials
+                            handpicked<br>for your furry
                             friends.</p>
-                        <button class="btn px-6 mt-5 text-[16px]">Shop Now</button>
+                        <button class="btn px-6 mt-5 lg:text-[16px]">Shop Now</button>
                     </div>
                     <img class="w-56 h-72 ml-32 -mt-28" src="c1-assets/cute-pet-mid.png" alt="">
                 </div>
 
                 <div class="lg:col-span-2">
                     <div class="grid lg:grid-cols-3 grid-cols-2 lg:gap-6 gap-4">
-
-
                         <div class="w-[220px] h-[120px] bg-white rounded-xl flex gap-5 p-6">
                             <div class="bg-[#FFF9F4] w-[60px] h-[60px] rounded-lg">
                                 <img class="w-[40px] h-[40px] ml-[10px] mt-[10px]" src="c1-assets/dog-cartoon.png"
@@ -349,7 +343,7 @@
         </section>
 
         <section>
-            <h1 class="adlam text-3xl mt-14 text-center animate-bounce mb-5">Frequently Asked Questions</h1>
+            <h1 class="adlam lg:text-3xl text-2xl mt-14 text-center mb-5">Frequently Asked Questions</h1>
             <div class="join join-vertical w-full px-4 md:px-0 md:w-3/4 mx-auto flex justify-center">
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" checked="checked" />
@@ -360,7 +354,8 @@
                 </div>
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" />
-                    <div class="collapse-title text-xl font-medium">How long will it take for my package to arrive?</div>
+                    <div class="collapse-title text-xl font-medium">How long will it take for my package to arrive?
+                    </div>
                     <div class="collapse-content">
                         <p>24-72 hours.</p>
                     </div>
@@ -376,10 +371,10 @@
         </section>
 
         <section class="container mx-auto lg:p-20 mb-96 mt-14">
-            <h1 class="adlam text-4xl mb-14">Everyday low Price</h1>
+            <h1 class="adlam lg:text-4xl text-3xl mb-14">Everyday low Price</h1>
             <div class="flex lg:flex-row flex-col gap-6">
                 <div
-                    class="lg:w-3/5 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] flex lg:justify-around lg:flex-row flex-col rounded-xl lg:items-center">
+                    class="lg:w-3/5 w-11/12 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] flex lg:justify-around lg:flex-row flex-col rounded-xl lg:items-center">
 
                     <div class="pt-16 pl-9 lg:py-32 lg:pl-16 flex flex-col gap-3">
                         <p class="text-xl hidden lg:block">Under Price</p>
@@ -391,7 +386,8 @@
                     <img class="lg:w-3/5 w-1/2 ml-40 lg:ml-0" src="c1-assets/cute-dog-mid.png" alt="">
                 </div>
 
-                <div class="flex justify-around bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-xl">
+                <div
+                    class="flex justify-around bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] rounded-xl lg:w-3/5 w-11/12">
                     <div class="pt-16 pl-9 flex flex-col gap-2">
                         <p class="adlam text-2xl">T-Shirt for Dogs</p>
                         <h1 class="adlam text-[#FFDC26] text-5xl">$7.99</h1>
@@ -404,39 +400,41 @@
 
         <section class="container mx-auto lg:-mt-[420px] -mt-80 px-5 lg:p-20 absolute z-10">
             <div
-                class="lg:p-8 p-3 gap-5 lg:gap-10 rounded-2xl bg-[#FFF9F4] flex flex-col lg:flex-row lg:justify-around lg:items-center">
+                class="lg:p-8 p-3 lg:gap-10 gap-5 rounded-2xl bg-[#FFF9F4] flex flex-col lg:flex-row lg:justify-around lg:items-center">
                 <div>
-                    <img class="pt-12" src="c1-assets/cute-pet-mid.png" alt="">
+                    <img class="pt-12 lg:w-auto w-4/5" src="c1-assets/cute-pet-mid.png" alt="">
                 </div>
                 <div class="flex flex-col gap-4">
-                    <h1 class="mt-10 adlam text-3xl animate-pulse">Get Pawsome News!</h1>
-                    <p>Exclusive training tips, ticks, product deals and more.</p>
+                    <h1 class="lg:mt-10 adlam lg:text-3xl text-2xl">Get Pawsome News!</h1>
+                    <p class="lg:text-base text-sm">Exclusive training tips, ticks, product deals and more.</p>
                     <input type="text" placeholder="Enter Email ..."
                         class="input input-bordered w-full max-w-xs text-[#C4C4C4]" />
-                    <button class="btn btn-warning w-[140px] text-[16px] font-normal">Subscribe</button>
+                    <button
+                        class="btn btn-warning lg:w-[140px] w-[100px] lg:text-[16px]  text-xs font-normal lg:ml-0 ml-28">Subscribe</button>
                 </div>
         </section>
     </main>
 
-    <footer class="w-full bg-[#FFDC2680] lg:p-48 lg:-mt-52 relative">
+    <footer class="lg:w-full bg-[#FFDC2680] lg:p-48 lg:-mt-52 relative">
         <div class="flex flex-col lg:flex-row pl-5 lg:justify-between pt-96 lg:pt-64 lg:items-center">
             <div class="flex flex-col gap-5">
                 <div class="flex gap-3">
-                    <img src="c1-assets/logo-footer.png" alt="">
-                    <h1 class="mt-3 text-[26px]">Browse4Pets</h1>
+                    <img class="lg:w-auto lg:mt-0 mt-4" src="c1-assets/logo-footer.png" alt="">
+                    <div class="lg:text-2xl text-xl lg:mt-2 mt-7">Browse<span class="text-[#FFDC26]">4</span>Pets</div>
                 </div>
-                <p class="text-xl">Discover a world of treats,<br>toys, and essentials handpicked<br>for your furry
+                <p class="lg:text-xl text-xs">Discover a world of treats,<br>toys, and essentials handpicked<br>for your
+                    furry
                     friends</p>
             </div>
 
             <div class="flex flex-col mt-9 gap-3">
-                <h1 class="text-xl cursor-pointer">Find a Pet</h1>
-                <h1 class="text-xl cursor-pointer">Breeds</h1>
-                <h1 class="text-xl cursor-pointer">Contact Us</h1>
+                <h1 class="lg:text-xl cursor-pointer">Find a Pet</h1>
+                <h1 class="lg:text-xl cursor-pointer">Breeds</h1>
+                <h1 class="lg:text-xl cursor-pointer">Contact Us</h1>
             </div>
 
 
-            <div class="flex flex-col gap-3 mt-24">
+            <div class="flex flex-col gap-3 lg:mt-24 mt-10">
                 <h1 class="font-medium">Follow Us</h1>
                 <img class="cursor-pointer w-[184.92px] pb-6" src="c1-assets/social.png" alt="">
             </div>
